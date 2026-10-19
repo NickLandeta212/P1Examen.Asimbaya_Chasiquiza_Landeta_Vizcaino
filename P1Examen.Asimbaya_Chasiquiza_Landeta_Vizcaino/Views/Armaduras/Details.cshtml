@@ -1,0 +1,50 @@
+﻿@model ExamenP1.Asimbaya_Chasiquiza_Landeta_Vizcaino.Models.Armadura
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Armadura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Caballeros.caballeroName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Caballeros.caballeroName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreArmadura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreArmadura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipoArmadura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoArmadura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.resistencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.resistencia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
